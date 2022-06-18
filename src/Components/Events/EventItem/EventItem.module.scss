@@ -1,0 +1,59 @@
+.event__item__wrapper {
+    margin: 32px 0;
+	.events__main__scroll__event {
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+		width: 250px;
+		height: 310px;
+		text-align: center;
+		border: 1px solid transparent;
+        
+		box-shadow: 0px 8px 32px rgba(44, 145, 198, 0.5);
+		border-radius: 30px;
+        transition: all .3s .2s;
+        &:hover {
+            transform: scale(1.1);
+        }
+		.events__main__scroll__event__date {
+			margin-top: 32px;
+		}
+        .events__main__scroll__event__span {
+            margin-top: 15px;
+            color: #2C91C6;
+        }
+		.events__main__scroll__event__name {
+			margin-top: 15px;
+			font-size: 1.25em;
+			font-weight: 600;
+			text-align: center;
+			padding: 0 32px 0 32px;
+            height: 56px;
+		}
+		.events__main__scroll__event__time {
+			margin-top: 10px;
+		}
+		.events__main__scroll__event__app {
+			margin-top: 4px;
+		}
+        
+		.events__main__scroll__event__button {
+            background-color: #000;
+			border: 1px solid transparent;
+			border-radius: 8px;
+            margin-top: 16px;
+			height: 43px;
+			width: 152px;
+			color: white;
+			font-size: 18px;
+			font-weight: 600;
+            transition: all .4s;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid black;
+                background-color: #fff;
+                color: black;
+            }
+		}
+	}
+}

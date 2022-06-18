@@ -1,0 +1,66 @@
+[
+	{
+		"name": "Aaron Liberman",
+		"position": "President"
+	},
+	{
+		"name": "Karnikka Velumani",
+		"position": "Vice President"
+	},
+	{
+		"name": "Ethan Davidson",
+		"position": "Webmaster"
+	},
+	{
+		"name": "Tommy Le",
+		"position": "Treasurer"
+	},
+	{
+		"name": "Armanul Ambia",
+        "span": "Algo",
+        "color": "#9D35E7",
+		"position":  "Director"
+	},
+	{
+		"name": "Alex",
+        "span": "Algo",
+        "color": "#9D35E7",
+		"position": "Officer"
+	},
+	{
+		"name": "Mike Ploythai",
+        "span": "Create",
+        "color": "#FF4365",
+		"position": "Director"
+	},
+	{
+		"name": "Samuel Valls",
+		"span": "Create",
+        "color": "#FF4365",
+		"position": "Officer"
+	},
+	{
+		"name": "Kayla Nguyen",
+		"span": "Create",
+        "color": "#FF4365",
+		"position": "Officer"
+	},
+	{
+		"name": "Serena Naranjo",
+		"span": "Create",
+        "color": "#FF4365",
+		"position": "Officer"
+	},
+	{
+		"name": "Wesley Chou",
+		"span": "Dev",
+        "color": "#1E6CFF",
+		"position": "Director"
+	},
+	{
+		"name": "Andy Lasso",
+		"span": "Dev",
+        "color": "#1E6CFF",
+		"position": "Officer"
+	}
+]

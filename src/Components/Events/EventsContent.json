@@ -1,0 +1,38 @@
+[
+	{
+		"date": "January 29",
+		"name": "Spring General Meeting",
+		"time": "4 PM PT",
+		"app": "Zoom",
+		"color":"0px 8px 32px rgba(44, 145, 198, 0.5);"
+	},
+	{
+		"date": "January 31",
+		"name": "EPP Review Session",
+		"time": "4 PM PT",
+		"app": "Discord",
+		"color":"0px 8px 32px rgba(44, 145, 198, 0.5);"
+	},
+	{
+		"date": "February 01",
+		"name": "So What's Design? #1",
+		"time": "7 PM PT",
+		"app": "Zoom",
+		"color": "0px 8px 32px rgba(255, 67, 101, 0.5);"
+	},
+	{
+		"date": "February 05",
+		"name": "Intro to Problem Solving",
+		"time": "3 PM PT",
+		"app": "Zoom",
+		"color": "0px 8px 32px rgba(157, 53, 230, 0.5);" 
+	},
+	{
+		"date": "February 05",
+        "span": "RECURRING",
+		"name": "Intro to Problem Solving",
+		"time": "3 PM PT",
+		"app": "Zoom",
+		"color":"0px 8px 32px rgba(44, 145, 198, 0.5);"
+	}
+]

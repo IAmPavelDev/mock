@@ -1,0 +1,25 @@
+.footer__wrapper {
+    display: flex;
+    bottom: 0;
+    justify-self: flex-end;
+    margin-top: auto;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    background-color: black;
+    color: white;
+    height: 80px;
+    width: 100%;
+    font-weight: 600;
+    .footer__copyright {
+        display: flex;
+        align-self: center;
+        margin-right: 50%;
+    }
+    .footer__icons {
+        display: flex;
+        align-self: center;
+    }
+}
