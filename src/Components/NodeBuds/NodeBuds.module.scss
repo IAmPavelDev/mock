@@ -1,0 +1,76 @@
+.nodeBuds__wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: 200px 0;
+	max-width: 1920px;
+	.nodeBuds__wrapper__buds {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 22%;
+		.nodeBuds__wrapper__buds__details {
+			p:first-child {
+				font-size: 2em;
+				font-weight: 600;
+			}
+			.nodeBuds__wrapper__buds__details__weightWord {
+				font-weight: 600;
+				.nodeBuds__wrapper__buds__details__weightWord__color {
+					font-weight: 700;
+					color: #d41153;
+				}
+			}
+		}
+		.nodeBuds__wrapper__buds__icon {
+			img {
+				max-width: 350px;
+				max-height: 350px;
+				min-width: 200px;
+				min-height: 200px;
+				width: 18vw;
+				height: 18vw;
+			}
+		}
+	}
+	.nodeBuds__wrapper__officers {
+		display: flex;
+		flex-direction: column;
+		margin-top: 200px;
+		text-align: center;
+		align-items: center;
+		.nodeBuds__wrapper__officers__header {
+			p {
+				font-size: 2em;
+				
+			}
+			select {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				display: flex;
+				border: none;
+				background-color: #000;
+				background-image: url(./../../Images/arrowSelect.png);
+				background-size: 16px;
+				background-repeat: no-repeat;
+				background-position-x: 90%;
+				background-position-y: 17px;
+				color: white;
+				font-size: 18px;
+				font-weight: 600;
+				padding: 0 22px 1px 0;
+				width: 140px;
+				height: 43px;
+				text-align: center;
+				border-radius: 8px;
+			}
+		}
+	}
+	.nodeBuds__wrapper__officers__board {
+		margin-top: 64px;
+		p {
+			font-size: 18px;
+			font-weight: 600;
+		}
+	}
+}

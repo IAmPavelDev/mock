@@ -13,19 +13,29 @@ export default function Events() {
 
 	function countOfSlides() {
 		let h = window.innerWidth;
-		if (h >= 1730 && slidesToShow !== 3.5) {
-			setSlidesToShow(3.5);
-		} else if (h >= 1400 && h < 1730 && slidesToShow !== 3) {
-			setSlidesToShow(3);
-		} else if (h < 1400 && h >= 1200 && slidesToShow !== 2.5) {
-			setSlidesToShow(2.5);
-		} else if (h < 1200 && h >= 1000 && slidesToShow !== 2) {
-			setSlidesToShow(2);
-		} else if (h < 1000 && h >= 850 && slidesToShow !== 1.5) {
-			setSlidesToShow(1.5);
-		} else if (h < 850 && slidesToShow !== 1) {
-			setSlidesToShow(1);
+		let calcSlides = +(-19 + 3 * Math.log(h)).toFixed(1);
+		calcSlides = calcSlides >= 1
+							? calcSlides
+							: 1; 
+
+		// console.log((-19 + 3 * Math.log(h)).toFixed(1));
+		if ((slidesToShow !== calcSlides)) {
+			setSlidesToShow(calcSlides);
 		}
+		// setSlidesToShow(2);
+		// if (h >= 1730 && slidesToShow !== 3.5) {
+		// 	setSlidesToShow(3.5);
+		// } else if (h >= 1400 && h < 1730 && slidesToShow !== 3) {
+		// 	setSlidesToShow(3);
+		// } else if (h < 1400 && h >= 1200 && slidesToShow !== 2.5) {
+		// 	setSlidesToShow(2.5);
+		// } else if (h < 1200 && h >= 1000 && slidesToShow !== 2) {
+		// 	setSlidesToShow(2);
+		// } else if (h < 1000 && h >= 850 && slidesToShow !== 1.5) {
+		// 	setSlidesToShow(1.5);
+		// } else if (h < 850 && slidesToShow !== 1) {
+		// 	setSlidesToShow(1);
+		// }
 	}
 
 	window.onresize = countOfSlides;
