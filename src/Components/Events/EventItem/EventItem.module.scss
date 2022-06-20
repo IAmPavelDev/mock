@@ -1,59 +1,85 @@
 .event__item__wrapper {
-    margin: 32px 0;
+	margin: 32px 0;
 	.events__main__scroll__event {
 		display: flex;
-        flex-direction: column;
-        align-items: center;
-		width: 250px;
+		flex-direction: column;
+		align-items: center;
+		max-width: 250px;
+		min-width: 110px;
+		width: 200px;
 		height: 20em;
 		text-align: center;
 		border: 1px solid transparent;
-        
+
 		box-shadow: 0px 8px 32px rgba(44, 145, 198, 0.5);
 		border-radius: 30px;
-        transition: all .3s .2s;
-        &:hover {
-            transform: scale(1.1);
-        }
+		transition: all 0.3s 0.2s;
+		&:hover {
+			transform: scale(1.1);
+		}
+		@media (max-width: 520px) {
+			border-radius: 8px;
+			width: 30vw;
+			height: 22em
+		}
 		.events__main__scroll__event__date {
 			margin-top: 32px;
 		}
-        .events__main__scroll__event__span {
-            margin-top: 15px;
-            color: #2C91C6;
-        }
+		.events__main__scroll__event__span {
+			margin-top: 15px;
+			color: #2c91c6;
+		}
 		.events__main__scroll__event__name {
 			margin-top: 15px;
 			font-size: 1.25em;
 			font-weight: 600;
 			text-align: center;
 			padding: 0 32px 0 32px;
-            height: 56px;
+			height: 56px;
+			@media (max-width: 520px) {
+				font-size: 1em;
+			}
 		}
 		.events__main__scroll__event__time {
 			margin-top: 2em;
+			@media (max-width: 520px) {
+				margin: 2em 20px;
+			}
 		}
 		.events__main__scroll__event__app {
 			margin-top: 4px;
+			@media (max-width: 520px) {
+				margin-top: -10px;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
 		}
-        
+
 		.events__main__scroll__event__button {
-            background-color: #000;
+			background-color: #000;
 			border: 1px solid transparent;
 			border-radius: 8px;
-            margin-top: 16px;
+			margin-top: 16px;
 			height: 43px;
 			width: 152px;
 			color: white;
 			font-size: 18px;
 			font-weight: 600;
-            transition: all .4s;
-            cursor: pointer;
-            &:hover {
-                border: 1px solid black;
-                background-color: #fff;
-                color: black;
-            }
+			transition: all 0.4s;
+			cursor: pointer;
+			&:hover {
+				border: 1px solid black;
+				background-color: #fff;
+				color: black;
+			}
+			@media (max-width: 520px) {
+				font-size: 1em;
+				// height: 58px;
+				font-weight: 500;
+				width: 90%;
+				bottom: 0;
+				
+			}
 		}
 	}
 }

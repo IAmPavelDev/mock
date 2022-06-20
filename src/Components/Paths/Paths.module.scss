@@ -1,7 +1,7 @@
 .paths__wrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 200px 0;
+	margin: 200px auto;
 	max-width: 1920px;
 	.path__wrapper__header {
 		text-align: center;
@@ -93,6 +93,19 @@
 					font-weight: 700;
 					color: #1e6cff;
 				}
+			}
+		}
+		@media (max-width: 820px) {
+			.path__wrapper__main__algo,
+			.path__wrapper__main__dev {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+			}
+			.path__wrapper__main__create {
+				display: flex;
+				flex-direction: column-reverse;
+				text-align: center;
 			}
 		}
 	}

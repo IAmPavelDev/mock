@@ -15,8 +15,10 @@
     font-weight: 600;
     .footer__copyright {
         display: flex;
+        flex-direction: row;
         align-self: center;
         margin-right: 50%;
+        white-space: nowrap;
     }
     .footer__icons {
         display: flex;

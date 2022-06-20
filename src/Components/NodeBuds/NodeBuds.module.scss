@@ -1,7 +1,7 @@
 .nodeBuds__wrapper {
 	display: flex;
 	flex-direction: column;
-	margin: 200px 0;
+	margin: 200px auto;
 	max-width: 1920px;
 	.nodeBuds__wrapper__buds {
 		display: flex;
@@ -31,6 +31,10 @@
 				width: 18vw;
 				height: 18vw;
 			}
+		}
+		@media (max-width: 520px) {
+			flex-direction: column-reverse;
+			text-align: center;
 		}
 	}
 	.nodeBuds__wrapper__officers {
@@ -71,6 +75,14 @@
 		p {
 			font-size: 18px;
 			font-weight: 600;
+		}
+		img {
+			max-width: 350px;
+			max-height: 350px;
+			min-width: 200px;
+			min-height: 200px;
+			width: 18vw;
+			height: 18vw;
 		}
 	}
 }

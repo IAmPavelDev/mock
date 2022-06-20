@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	max-width: 1920px;
-	margin-top: 200px;
+	margin: 200px auto;
 	.about__who {
 		display: flex;
 		flex-direction: column;
@@ -16,17 +16,17 @@
 			img {
 				max-width: 150px;
 				max-height: 150px;
-				min-width: 75px;
-				min-height: 75px;
+				min-width: 50px;
+				min-height: 50px;
 				width: 8vw;
 				height: 8vw;
-				margin: 0 1.5vw 0 1.5vw;
+				margin: 0 1vw 0 1vw;
 			}
 			img:nth-child(3) {
 				max-width: 200px;
 				max-height: 200px;
-				min-width: 100px;
-				min-height: 100px;
+				min-width: 75px;
+				min-height: 75px;
 				width: 10vw;
 				height: 10vw;
 			}
@@ -72,7 +72,7 @@
 				color: white;
 				padding: 8px 20px;
 				border-radius: 8px;
-				margin: -15px 82px 0 82px;
+				margin: 0 auto;
 			}
 		}
 		.about__board__badges {
@@ -81,7 +81,7 @@
 			margin: 64px auto 200px auto;
 			justify-content: center;
 			grid-template-columns: 1fr 1fr 1fr 1fr;
-			grid-column-gap: 6vw;
+			grid-column-gap: calc(4vw + 10px);
 			grid-row-gap: 64px;
 			.about__badge {
                 display: flex;
@@ -105,6 +105,15 @@
                     font-size: 12px;
                     margin-top: -10px;
                 }
+			}
+			@media (max-width: 850px) {
+				grid-template-columns: 1fr 1fr 1fr;
+				.about__badge {
+					width: 24vw;
+				}
+			}
+			@media (max-width: 520px) {
+				grid-template-columns: 1fr 1fr;
 			}
 		}
 	}
